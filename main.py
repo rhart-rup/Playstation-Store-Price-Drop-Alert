@@ -1,4 +1,3 @@
-#!/Users/rupe/OneDrive/Documents_Rupert/Statistical_Analysis/Projects/Playstation_Store_Scrape/envs/bin/python3.7
 import requests
 from bs4 import BeautifulSoup
 import time
@@ -19,11 +18,7 @@ import os.path
 from googleapiclient.discovery import build
 
 # Set working directory to the project folder
-os.chdir("/Users/rupe/OneDrive/Documents_Rupert/Statistical_Analysis/Projects/Playstation_Store_Scrape")
-
-# Initialise plotly / cufflinks for offline plotting
-cf.set_config_file(offline=True)
-setattr(plotly.offline, "__PLOTLY_OFFLINE_INITIALIZED", True)
+os.chdir("<replace_with_path_to_project_folder>")
 
 def extract_price(game_page):
     """Finds and returns the price of a game on a playstation store
