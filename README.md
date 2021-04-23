@@ -9,11 +9,17 @@ This project provides a python script that:
 * Provides an interactive dashboard of prices over time for the various games  
 * Sends an email alert when a price drops
 
-The script is intended to be run automatically once per day. 
+The script is intended to be run automatically once per day. See below for details on how this can be done on MacOS. 
 
 ## Features
 
+### Track Any Game Any Time
+
+You can track the prices of any game on the UK Playtsation Store simply by adding a new row to the game_prices.csv file. You can track as many games as you want and you can add and remove games at any time. 
+
 ### Interactive Historical Price Dashboard
+
+Shows price history for each game in a separate chart. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Dashboard.png)
 
@@ -33,13 +39,19 @@ Additionally, an email notifaction is sent if an error occured when scraping the
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Failure%20Notification%20Email.png)
 
-
-of hat monitors o pull the current price for  game from the UK Playstion Store
-
-price drop alerts for number of games 
-dashboard 
-errors 
-email alerts 
-
 ## Requirements & Setup
+
+In order to run the script successfully you will need: 
+
+run successfully before automating. 
+
+- main.py plus requirements.txt
+- token credentials from google (with link)
+- Note Mac OS comments
+- initial csv
+- Playstation url to get game_id - grabbing the game ID from the playstation store updating a line in the csv...
+
+ 
 ## Automation
+
+set for daily runs, I used plists and converted to an executable file on mac. If day is missed it will still work. 
