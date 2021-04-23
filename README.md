@@ -1,12 +1,16 @@
-# Playstation-Store-Price-Drop-Alert
+# Playstation Store Price Drop Alert
 ![price drop graphic](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Graph3.png?raw=true)
 
 ## Overview
 
-This project provides a python script that is intended to run daily to: 
+This project provides a python script that: 
 * Scrapes the price for a set of games from the UK Playtsation Store
+* Stores these historical prices in a csv file
+* Provides a dashboard of prices over time for the various games.
+![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Dashboard.png)
 * Sends email alerts when a price drops
-* Provides a dashboard of prices over time for the various games.  
+![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)
+ 
 .
 .
 
