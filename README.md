@@ -6,13 +6,14 @@
 This project provides a python script that: 
 * Scrapes the price for a set of games from the UK Playtsation Store
 * Stores these historical prices in a csv file
-* Provides a dashboard of prices over time for the various games.
+* Provides a dashboard of prices over time for the various games  
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Dashboard.png)
+
 * Sends email alerts when a price drops
+
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)
  
-.
-.
+
 
 of hat monitors o pull the current price for  game from the UK Playstion Store
 
