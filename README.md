@@ -3,7 +3,14 @@
 
 ## Overview
 
-This project provides a python script to pull the current price for  game from the UK Playstion Store
+This project provides a python script that is intended to run daily to: 
+* Scrapes the price for a set of games from the UK Playtsation Store
+* Sends email alerts when a price drops
+* Provides a dashboard of prices over time for the various games.  
+.
+.
+
+of hat monitors o pull the current price for  game from the UK Playstion Store
 
 price drop alerts for number of games 
 dashboard 
