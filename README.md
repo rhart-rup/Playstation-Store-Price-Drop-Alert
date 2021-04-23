@@ -17,7 +17,7 @@ The script is intended to be run automatically once per day. See below for detai
 
 You can track the price of any game on the UK Playtsation Store. You can track as many games as you want. You can start and stop tracking games at any time. 
 
-To track a game, you simply need the game_id which can be found at the end of the url of the game's Playtsation Store page.
+To track a game, you simply need the game_id. This can be found at the end of the url of the game's Playtsation Store page.
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/game_ID%20example.png)
 
