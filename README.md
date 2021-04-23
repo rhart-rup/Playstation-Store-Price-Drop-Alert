@@ -15,7 +15,11 @@ The script is intended to be run automatically once per day. See below for detai
 
 ### Track Any Game Any Time
 
-You can track the prices of any game on the UK Playtsation Store simply by adding a new row to the game_prices.csv file. You can track as many games as you want and you can add and remove games at any time. 
+You can track the price of any game on the UK Playtsation Store and you can track as many games as you want. You can start and stop tracking games at any time. 
+
+To track a game, you simply need to add the game_id to the game_prices.csv. You can find the game_id on the Playtsation Store page for the game.
+
+![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/game_ID%20example.png)
 
 ### Interactive Historical Price Dashboard
 
