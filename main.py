@@ -111,12 +111,14 @@ except:
         exit('exit')
 
 # The game price data is stored in Game_prices.csv. Each row
-# corresponds to a different game, each column is the price of a game
-# on a certain day with the days ordered sequentially from left to
-# right. The header for each column is the date the price was taken.
-# The first column stores the name of the game which is used
-# as an index. The second column stores the game ID used by the
-# playstation store.
+# corresponds to a different game. The first column ('game') 
+# contains the name of the game. The second column ('game id') 
+# contains the unique ID for the game on the playstation store.
+# The remaining columns contain the price of the game on 
+# each day the script was run. The header for each column is 
+# the date the price was found. When the script is run for the 
+# first time there will be no price data (there will only be 
+# the 'game' and 'game id' columns)  
 df = pd.read_csv('game_prices.csv', ',', index_col='game')
 
 # Convert the date column headers to date-time format
