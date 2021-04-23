@@ -19,7 +19,7 @@ The script is intended to be run automatically once per day.
 
 ### Price Drop Email Alerts
 
-If there are one or more price drops, an email alert is sent containing all price drops for that day. The email includes html links to the Playstation Store page for each game whose price has dropped.
+An email alert is sent containing all price drops for that day and includes html links to the Playstation Store pages for each game. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)  
 
@@ -29,7 +29,7 @@ Custom error messages are displayed if the script was unable to access the inter
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Error%20Message.png)
 
-Additionally, an email notifaction is sent if an error occured when scraping the price data. The email will specifcy which games failed to scrape, provide an html link to the specific Playstation Store page and specify whether the scraping failed or returned a null value (or both).   
+Additionally, an email notifaction is sent if an error occured when scraping the price data.    
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Failure%20Notification%20Email.png)
 
