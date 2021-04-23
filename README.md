@@ -6,8 +6,8 @@
 This project provides a python script that: 
 * Scrapes the price for a set of games from the UK Playtsation Store
 * Stores these historical prices in a csv file
-* Provides a dashboard of prices over time for the various games  
-* Sends email alert when a price drops
+* Provides an interactive dashboard of prices over time for the various games  
+* Sends an email alert when a price drops
 
 The script is intended to be run automatically once per day. 
 
