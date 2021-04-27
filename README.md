@@ -41,7 +41,7 @@ Custom error messages are displayed if the script was unable to access the inter
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Error%20Message.png)
 
-Additionally, an email notifaction is sent if an error occured when scraping the price data.    
+Additionally, an email notifaction is sent if an error occured when scraping the price data. It contains links to the specific pages that failed to scrape.    
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Failure%20Notification%20Email.png)
 
