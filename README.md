@@ -7,7 +7,7 @@ This project provides a python script that:
 * Scrapes the price for a set of games on the UK Playtsation Store
 * Stores these historical prices in a csv file
 * Provides an interactive dashboard of prices over time for the various games  
-* Sends an email alert when a game price drops
+* Sends an email notification when a game price drops
 
 The script is intended to be run automatically once per day and is robust to interruptions (i.e. still works if the script sometimes fails to run). See below for details on how this automation can be done on MacOS. 
 
@@ -29,9 +29,9 @@ Shows price history for each game you are tracking in a separate chart.
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Dashboard.png)
 
-### Price Drop Email Alerts
+### Price Drop Email Notification
 
-The email alert contains all price drops that day and includes html links to the Playstation Store pages for each game. 
+Email sent when a price drop is detected that includes links to the specific Playstation Store page for each game. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)  
 
