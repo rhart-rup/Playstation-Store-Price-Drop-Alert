@@ -25,7 +25,7 @@ To track a game, you simply need the *game_id*. This can be found by navigating 
 
 ### Interactive Historical Price Dashboard
 
-Shows price history for each game in a separate chart. 
+Shows price history for each game you are tracking in a separate chart. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Dashboard.png)
 
