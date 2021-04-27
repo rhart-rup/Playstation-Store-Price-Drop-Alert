@@ -15,7 +15,9 @@ The script is intended to be run automatically once per day and is robust to int
 
 ### Track Any Game Any Time
 
-You can track the price of any game on the UK Playtsation Store. You can track as many games as you want. You can start and stop tracking games at any time. 
+* Track the price of any game on the UK Playtsation Store 
+* Track as many games as you want
+* Start and stop tracking games at any time. 
 
 To track a game, you simply need the *game_id*. This can be found by navigating to the Playstation Store page for the game. The *game_id* is the text followng the last '/' of the url. 
 
