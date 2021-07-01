@@ -61,9 +61,9 @@ In order to run the script you must:
 
 After the file is run, it will have generated the *Game Prices.html* file which is the interactive dashbaord. It will also have updated the *game_prices.csv* file with a new column. The column header is the date the script was run. The column records the price of each game in the file on that day. 
 
-Each time the *main.py* script is run on subsequent days, a new column is added recording the latest prices for the games and the price dashboard is updated. When a price drop is detected, the email alert is sent.
+Each time the *main.py* script is run on subsequent days, a new column is added recording the latest prices for the games and the price dashboard is updated. When a price drop is detected, the email alert is sent. If the script is re-run on the same day, the latest price column is updated, it does not create another column. 
 
-### Adding / Removing Games to Track
+### Adding & Removing Games to Track
 
 * To track a new game, add the game name and game_id on a new row in the *game_prices.csv*
 * To stop tracking a game, delete the entire row of data for that game in the *game_prices.csv*, including the game name and game_id. Ensure there are no blank rows in the csv. 
