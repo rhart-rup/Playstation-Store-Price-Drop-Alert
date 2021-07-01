@@ -9,7 +9,7 @@ This project provides a python script that:
 * Provides an interactive dashboard of prices over time for the various games  
 * Sends an email alert when a game price drops
 
-The script is intended to be run automatically once per day and is robust to interruptions (i.e. still works if the script sometimes fails to run). See below for details on how this automation can be done on MacOS. 
+The script is intended to be run automatically once per day and is robust to interruptions (i.e. still works if the script fails to run on some days). See below for details on how this automation can be done on MacOS. 
 
 ## Features
 
