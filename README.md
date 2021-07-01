@@ -49,13 +49,17 @@ Additionally, an email notifaction is sent if an error occured when scraping the
 
 In order to run the script successfully you must: 
 
-* Create a virtual environment from the *requirements.txt* file in this repo
-* Create Gmail API credentials as follows:  
+1. Create a virtual environment from the *requirements.txt* file in this repo
+
+2. Create Gmail API credentials as follows:  
   1. Complete steps 1. and 2. [here](https://developers.google.com/gmail/api/quickstart/python). In Step 2. you should change the SCOPES variable value in quickstart.py to "www.gmail.com" to give you access to send emails from your gmail account using the API. 
   2. Ensure you have successfully created a *token.pickle* file
-* Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in a game name and game_id to add each game you wish to track (see above for details on getting the game_id).
-* Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
-* Run the main.py file using the virtual environment.
+
+3. Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in a game name and game_id to add each game you wish to track (see above for details on getting the game_id).
+
+4. Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
+
+5. Run the main.py file using the virtual environment.
 
 
 - Playstation url to get game_id - grabbing the game ID from the playstation store updating a line in the csv...
