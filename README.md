@@ -31,7 +31,7 @@ Shows price history for each game you are tracking in a separate chart.
 
 ### Price Drop Email Alert
 
-An email alert is sent when a price drop is detected. It includes links to the specific Playstation Store page for each game whose price has dropped that day. 
+An email alert is sent when a price drop is detected. It includes links to the specific Playstation Store page for every game whose price dropped that day. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)  
 
