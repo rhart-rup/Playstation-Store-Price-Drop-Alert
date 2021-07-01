@@ -54,15 +54,12 @@ In order to run the script successfully you must:
   1. Complete steps 1. and 2. [here](https://developers.google.com/gmail/api/quickstart/python). In Step 2. you should change the SCOPES variable value in quickstart.py to "www.gmail.com" to give you access to send emails from your gmail account using the API. 
   2. Ensure you have successfully created a *token.pickle* file
 * Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in a game name and game_id to add each game you wish to track (see above for details on getting the game_id).
-*  For non-MacOS users - The Error messages are specifically coded for MacOS and will not run on other machines. You'll need to remove them from the main.py file. 
+* Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
+* Run the main.py file using the virtual environment.
 
-- main.py plus requirements.txt
-- token credentials from google (with link)
-- Note Mac OS comments
-- initial csv
+
 - Playstation url to get game_id - grabbing the game ID from the playstation store updating a line in the csv...
 - adding and removing games (delete row..add row...)
-
  
 ## Automation
 
