@@ -31,7 +31,7 @@ Shows price history for each game you are tracking in a separate chart.
 
 ### Price Drop Email Alert
 
-An email alert is sent when a price drop is detected. It includes links to the specific Playstation Store page for every game whose price dropped that day. 
+An email alert is sent when a price drop is detected using the Gmail API. It includes links to the specific Playstation Store page for every game whose price dropped that day. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20email%20notification.png)  
 
@@ -47,9 +47,14 @@ Additionally, an email notifaction is sent if an error occured when scraping the
 
 ## Requirements & Setup
 
-In order to run the script successfully you will need: 
+In order to run the script successfully you must: 
 
-run successfully before automating. 
+* Create a virtual environment from the *requirements.txt* file in this repo
+* Create Gmail API credentials as follows:  
+  1. Complete steps 1. and 2. [here](https://developers.google.com/gmail/api/quickstart/python). In Step 2. you should change the SCOPES variable value in quickstart.py to "www.gmail.com" to give you access to send emails from your gmail account using the API. 
+  2. Ensure you have successfully created a *token.pickle* file
+* Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in a game name and game_id to add each game you wish to track (see above for details on getting the game_id).
+*  For non-MacOS users - The Error messages are specifically coded for MacOS and will not run on other machines. You'll need to remove them from the main.py file. 
 
 - main.py plus requirements.txt
 - token credentials from google (with link)
