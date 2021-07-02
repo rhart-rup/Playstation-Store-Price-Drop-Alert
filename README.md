@@ -70,4 +70,35 @@ Each time the *main.py* script is run on subsequent days, a new column is added 
 
 ## Automation On MacOS
 
-set for daily runs, I used plists and converted to an executable file on mac. If day is missed it will still work. 
+Launchd was used to run the script daily on MacOS. With Launchd, if the computer is asleep at time the script is scheduled to run, the script will be run immediately when the computer wakes. Cron cannot do this, so Launchd was chosen over cron. 
+
+### Setup
+
+To set the script to be run daily with Launchd, do as follows: 
+
+1. Navigate to your virtual environment folder and open it then open bin. You should find a file called Python with a version number e.g. *Python3.7*. Record the full path to this file.  
+2. Add a new first line to *main.py* which consists of **#!** followed by the full path above e.g. *#!/path_to_environment/bin/python3.7*
+3. Change the extension of the *main.py* to **main.command** 
+4. In Terminal, make the Python script file executable by running *chmod +x main.command* 
+5. Edit the *playstation_scraper.plist* file in this repo, replacing the */PATH/TO/Project/directory/*  sections of the strings to the path to the directory with *main.py*
+6. Save *playstation_scraper.plist* in /Library/LaunchAgents/
+
+### Starting Automation
+
+Run the following commands in Terminal:
+
+1. launchctl load /Library/LaunchAgents/playstation_scraper.plist
+2. launchctl start playstation_scraper
+3. launchctl list 
+
+Check playstation_scraper is in the list displayed in terminal and check its status is 0. A status of 78 means there is a problem with the plist. 
+
+### Stopping Automation
+
+Run the following commands in Terminal:
+
+1. launchctl stop playstation_scraper
+2. launchctl unload /Library/LaunchAgents/playstation_scraper.plist
+3. launchctl list 
+
+Check playstation_scraper is not in the list displayed. 
