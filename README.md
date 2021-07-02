@@ -54,8 +54,8 @@ In order to run the script you must:
 1. Create a virtual environment from the *requirements.txt* file in this repo.  
 2. Create Gmail API credentials as follows:  
     1. Go [here](https://developers.google.com/gmail/api/quickstart/python) and complete steps 1. and 2. In Step 2. you must change the SCOPES variable in *quickstart.py* to "www.gmail.com". This permits the API to send emails from your Gmail account. 
-    2. Ensure you have successfully created a *token.pickle* file.  
-3. Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in a game name and game_id to add each game you wish to track (see above for details on getting the game_id).
+    2. Confirm the above step created your *token.pickle* file.  
+3. Create an initial *game_prices.csv* by editing the template *game_prices.csv* file in this repo. You simply need to fill in the game name (an arbitrary name that you choose to identify each game) and game_id to add each game you wish to track (see above for details on getting the game_id).
 4. Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
 5. Run the main.py file using the virtual environment.
 
