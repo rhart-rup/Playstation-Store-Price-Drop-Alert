@@ -4,7 +4,7 @@
 ## Overview
 
 This project provides a python script that: 
-* Scrapes the price for a set of games on the UK Playtsation Store
+* Scrapes the price for a set of games on the UK Playstation Store
 * Stores these historical prices in a csv file
 * Provides an interactive dashboard of prices over time for the various games  
 * Sends an email alert (using the Gmail API) when a game price drops
@@ -19,7 +19,7 @@ The script is intended to be run automatically once per day and is robust to int
 * Track as many games as you want
 * Start and stop tracking games at any time. 
 
-To track a game, you simply need the *game_id*. This can be found by navigating to the Playstation Store page for the game. The *game_id* is the text followng the last '/' of the url. 
+To track a game, you simply need the *game_id*. This can be found by navigating to the Playstation Store page for the game. The *game_id* is the text following the last '/' of the url. 
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/game_ID%20example.png)
 
@@ -41,7 +41,7 @@ Custom error messages are displayed if the script was unable to access the inter
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Example%20Error%20Message.png)
 
-Additionally, an email notifaction is sent if an error occured when scraping the price data. It contains links to the specific pages that failed to scrape.    
+Additionally, an email notification is sent if an error occurred when scraping the price data. It contains links to the specific pages that failed to scrape.    
 
 ![](https://github.com/rhart-rup/Playstation-Store-Price-Drop-Alert/blob/main/Graphics/Failure%20Notification%20Email.png)
 
@@ -59,7 +59,7 @@ In order to run the script you must:
 4. Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
 5. Run the main.py file using the virtual environment.
 
-After the file is run, it will have generated the *Game Prices.html* file which is the interactive dashbaord. It will also have updated the *game_prices.csv* file with a new column with the date the script was run. The column records the price of each game on that day. 
+After the file is run, it will have generated the *Game Prices.html* file which is the interactive dashboard. It will also have updated the *game_prices.csv* file with a new column with the date the script was run. The column records the price of each game on that day. 
 
 Each time the *main.py* script is run on subsequent days, a new column is added recording the latest prices for the games and the price dashboard is updated. When a price drop is detected, the email alert is sent. If the script is re-run on the same day, the latest price column is updated, it does not create another column. 
 
@@ -80,7 +80,7 @@ Do the following to prepare the script to run daily:
 2. Add a new first line to *main.py* which consists of **#!** followed by the full path above e.g. *#!/path_to_environment/bin/python3.7*
 3. Change the extension of the *main.py* to **main.command** 
 4. In Terminal, make the Python script file executable by running **chmod +x main.command** 
-5. Edit the *playstation_scraper.plist* file in this repo, replacing the */PATH/TO/Project/directory/*  sections of strings (there are 3 such strings) to the path you are using on your maachine to run the script. 
+5. Edit the *playstation_scraper.plist* file in this repo, replacing the */PATH/TO/Project/directory/*  sections of strings (there are 3 such strings) to the path you are using on your machine to run the script. 
 6. Save *playstation_scraper.plist* in /Library/LaunchAgents/
 
 ### Starting Automation
