@@ -70,7 +70,7 @@ Each time the *main.py* script is run on subsequent days, a new column is added 
 
 ## Automation On MacOS
 
-Launchd was used to run the script daily on MacOS. With Launchd, if the computer is asleep at time the script is scheduled to run, the script will be run immediately when the computer wakes. Cron cannot do this, so Launchd was chosen over cron. 
+Launchd was used to run the script daily on MacOS. With Launchd, if the computer is asleep when the script is scheduled to run, the script will be run immediately when the computer wakes. Cron cannot do this, so Launchd was chosen over cron. 
 
 ### Setup
 
