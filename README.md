@@ -74,13 +74,13 @@ Launchd was used to run the script daily on MacOS. With Launchd, if the computer
 
 ### Setup
 
-Do the followiong to prepare the script to run daily: 
+Do the following to prepare the script to run daily: 
 
-1. Navigate to your virtual environment folder and open it then open bin. You should find a file called Python with a version number e.g. *Python3.7*. Record the full path to this file.  
+1. Navigate to your virtual environment folder and open it. Now open bin. You should find a file called Python with a version number e.g. *Python3.7*. Record the full path to this file.  
 2. Add a new first line to *main.py* which consists of **#!** followed by the full path above e.g. *#!/path_to_environment/bin/python3.7*
 3. Change the extension of the *main.py* to **main.command** 
-4. In Terminal, make the Python script file executable by running *chmod +x main.command* 
-5. Edit the *playstation_scraper.plist* file in this repo, replacing the */PATH/TO/Project/directory/*  sections of the strings to the path to the directory with *main.py*
+4. In Terminal, make the Python script file executable by running **chmod +x main.command** 
+5. Edit the *playstation_scraper.plist* file in this repo, replacing the */PATH/TO/Project/directory/*  sections of strings (there are 3 such strings) to the path you are using on your maachine to run the script. 
 6. Save *playstation_scraper.plist* in /Library/LaunchAgents/
 
 ### Starting Automation
