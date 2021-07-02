@@ -59,7 +59,7 @@ In order to run the script you must:
 4. Place the *main.py*, *game_prices.csv* and *token.pickle* files in the same directory.
 5. Run the main.py file using the virtual environment.
 
-After the file is run, it will have generated the *Game Prices.html* file which is the interactive dashbaord. It will also have updated the *game_prices.csv* file with a new column. The column header is the date the script was run. The column records the price of each game in the file on that day. 
+After the file is run, it will have generated the *Game Prices.html* file which is the interactive dashbaord. It will also have updated the *game_prices.csv* file with a new column with the date the script was run. The column records the price of each game on that day. 
 
 Each time the *main.py* script is run on subsequent days, a new column is added recording the latest prices for the games and the price dashboard is updated. When a price drop is detected, the email alert is sent. If the script is re-run on the same day, the latest price column is updated, it does not create another column. 
 
