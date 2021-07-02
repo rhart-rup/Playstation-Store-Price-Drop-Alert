@@ -74,7 +74,7 @@ Launchd was used to run the script daily on MacOS. With Launchd, if the computer
 
 ### Setup
 
-To set the script to be run daily with Launchd, do as follows: 
+Do the followiong to prepare the script to run daily: 
 
 1. Navigate to your virtual environment folder and open it then open bin. You should find a file called Python with a version number e.g. *Python3.7*. Record the full path to this file.  
 2. Add a new first line to *main.py* which consists of **#!** followed by the full path above e.g. *#!/path_to_environment/bin/python3.7*
